@@ -1,13 +1,6 @@
 import React from 'react';
 import './SearchBar.css';
 
-/*Using Yelp API*/
-const sortByOptions = {
-    'Best Match': 'best_match', /*The Default*/
-    'Highest Rated': 'rating',
-    'Most Reviewed': 'review_count'
-};
-
 class SearchBar extends React.Component {
 
     constructor(props){
@@ -17,15 +10,49 @@ class SearchBar extends React.Component {
             location:'',
             sortBy:'best-match'
         }; 
+        /*Using Yelp API*/
+        this.sortByOptions = {
+            'Best Match': 'best_match', /*The Default*/
+            'Highest Rated': 'rating',
+            'Most Reviewed': 'review_count'
+        };
     }
+
+    /* Provides visual feedback to users */
+    getSortByClass(sortByOption){
+        if(this.state.sortBy === sortByOption){
+            return 'active';
+        }
+        else{
+            return '';
+        }
+    };
+
+    handleSortByChange(sortByOption){
+        this.setState({
+            sortBy: sortByOption
+        });
+    };
+
+    handleTermChange(e){
+        this.setState({
+            term: event.target.value
+        });
+    };
+
+    handleLocationChange(e){
+        this.setState({
+            location: event.target.value
+        });
+    };
 
     /*Creates List Items Needed to Display the Sorting Options*/
     renderSortByOptions() {
-        return Object.keys(sortByOptions).map(sortByOption => {
+        return Object.keys(this.sortByOptions).map(sortByOption => {
             
             /*sortByOption = the sortByOptions keys*/
-            let sortByOptionValue = sortByOptions[sortByOption];
-            return <li key={sortByOptionValue}>{sortByOption}</li>;
+            let sortByOptionValue = this.sortByOptions[sortByOption];
+            return <li key={sortByOptionValue} className={this.getSortByClass(sortByOptionValue)} onClick={this.handleSortByChange.bind(this,sortByOptionValue)}>{sortByOption}</li>;
         });
     
     };
