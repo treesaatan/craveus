@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import BusinessList from '../BusinessList/BusinessList';
 import SearchBar from '../SearchBar/SearchBar';
-import Yelp from '../util/Yelp';
+import Yelp from '../../util/Yelp';
 
 /* Hard Code: Keys & Values Given by Codecademy */
 /*const business = { 
@@ -23,14 +23,14 @@ class App extends React.Component {
     super(props);
     this.state = {
       businesses: []
-    }
+    };
     this.searchYelp=this.searchYelp.bind(this);
   }
   /*simulating how a search would be like (will be replaced later) */
   searchYelp(term, location, sortBy){
-    Yelp.searchYelp(term, location, sortBy)
+    Yelp.search(term, location, sortBy)
     .then(businesses => {
-      this.setState({businesses: {businesses}})
+      this.setState({businesses: {businesses}});
     });
   }
   render(){

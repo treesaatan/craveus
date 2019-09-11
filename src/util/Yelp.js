@@ -15,7 +15,7 @@ let Yelp = {
         })
         .then(jsonResponse => {
             if (jsonResponse.businesses){
-                return jsonResponse.businesses.map(businesss => {
+                return jsonResponse.businesses.map(business => {
                     return {
                         /* Found in Yelp API /businesses/search */
                         id: business.id,
