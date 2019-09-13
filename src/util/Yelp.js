@@ -1,5 +1,3 @@
-import SearchBar from "../components/SearchBar/SearchBar";
-
 const apiKey = 'k__fzdZrt0jSWpP5hcGXRL_QSPOCvaOxYylX1_mwmYvZqFUvgx_lhICi4h7M0bUlsiFQRwVmVTuqTf36TmoETQ-33bvUTlV_Mx1tq_P1z7WFLyz4aM5tbP_Mzb5vXXYx';
 
 let Yelp = {
@@ -30,9 +28,7 @@ let Yelp = {
                         reviewCount: business.review_count
                     };
                 });
-            } else{
-
-            }
+            } 
         }); 
     }
 };
