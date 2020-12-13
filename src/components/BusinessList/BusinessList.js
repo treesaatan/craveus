@@ -11,7 +11,7 @@ class BusinessList extends React.Component {
                     return <Business business={business} key={business.id}/>;
                 })
             }
-          </div>
+            </div>
         );
     }
 }

@@ -6,8 +6,9 @@ class Business extends React.Component {
         const {business} = this.props;
         return(
         <div className="Business">
+            {/* the image(s) that shows up when a search is made */}
             <div className="image-container">
-                <img src='https://s3.amazonaws.com/codecademy-content/programs/react/ravenous/pizza.jpg' alt=''/>
+                <img src='https://www.preppywallpapers.com/wp-content/uploads/2017/01/Pantone-2017-Hazelnut-iphone-wallpaper.jpg' alt='businessplace'/>
             </div>
             <h2>{business.name}</h2>
             <div className="Business-information">
