@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/craveus/static/css/main.025b8b47.chunk.css",
+    "main.js": "/craveus/static/js/main.a63920da.chunk.js",
+    "main.js.map": "/craveus/static/js/main.a63920da.chunk.js.map",
+    "runtime~main.js": "/craveus/static/js/runtime~main.7887b803.js",
+    "runtime~main.js.map": "/craveus/static/js/runtime~main.7887b803.js.map",
+    "static/js/2.081ca528.chunk.js": "/craveus/static/js/2.081ca528.chunk.js",
+    "static/js/2.081ca528.chunk.js.map": "/craveus/static/js/2.081ca528.chunk.js.map",
+    "index.html": "/craveus/index.html",
+    "precache-manifest.745ddc4c352f57c4b2f25ae4201e3259.js": "/craveus/precache-manifest.745ddc4c352f57c4b2f25ae4201e3259.js",
+    "service-worker.js": "/craveus/service-worker.js",
+    "static/css/main.025b8b47.chunk.css.map": "/craveus/static/css/main.025b8b47.chunk.css.map",
+    "static/media/SearchBar.css": "/craveus/static/media/background_search_mobile.5d0905e6.jpg"
+  }
+}

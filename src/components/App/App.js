@@ -26,7 +26,7 @@ class App extends React.Component {
     };
     this.searchYelp=this.searchYelp.bind(this);
   }
-  /*simulating how a search would be like (will be replaced later) */
+  
   searchYelp(term, location, sortBy){
     Yelp.search(term, location, sortBy)
     .then(businesses => {
@@ -34,9 +34,9 @@ class App extends React.Component {
     });
   }
   render(){
-    return (
+    return ( 
       <div className="App">
-      <h1>craveus</h1>
+      <h1>craveus</h1> {/* top bar */}
       <SearchBar searchYelp={this.searchYelp}/>
       <BusinessList businesses={this.state.businesses}/> 
       </div>

@@ -2,7 +2,8 @@ const apiKey = 'k__fzdZrt0jSWpP5hcGXRL_QSPOCvaOxYylX1_mwmYvZqFUvgx_lhICi4h7M0bUl
 
 let Yelp = {
     search(term, location, sortBy) {
-        /*CORS Anywhere - bypasses CORS restrictions */
+        /*CORS Anywhere - bypasses CORS restrictions ... needs temporary access to demo server... then works*/
+        // By January 31st, 2021, cors-anywhere.herokuapp.com will stop serving as an open proxy
         return fetch(`https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?term=${term}&location=${location}&sort_by=${sortBy}`, {
             headers: {
                 Authorization: `Bearer ${apiKey}` /*Form of Identification; API key used as browser header */
