@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "889e3d500dc5354b4ff70224a9c979fd",
+    "revision": "ea86fd5099d014e6d4092610cedb54bb",
     "url": "/craveus/index.html"
   },
   {
-    "revision": "c759e1ba05168ba2ed98",
+    "revision": "7d207329565ca3e5998b",
     "url": "/craveus/static/css/main.025b8b47.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/craveus/static/js/2.081ca528.chunk.js"
   },
   {
-    "revision": "c759e1ba05168ba2ed98",
-    "url": "/craveus/static/js/main.e92678a4.chunk.js"
+    "revision": "7d207329565ca3e5998b",
+    "url": "/craveus/static/js/main.5485171c.chunk.js"
   },
   {
     "revision": "a476eb49c524cedd75cf",
